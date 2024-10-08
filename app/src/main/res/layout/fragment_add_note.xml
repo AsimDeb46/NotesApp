@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddNoteFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edContinar"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            app:helperText="required"
+            app:helperTextTextColor="#ED1818"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Write Something"
+                android:gravity="center"
+                android:inputType="text"
+                android:drawableStart="@drawable/baseline_speaker_notes_24"
+
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/pickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick A Date"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:background="@drawable/design"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:backgroundTint="#8B800C"
+
+        />
+
+    <TextView
+        android:id="@+id/pickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick A Time"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:background="@drawable/design"
+        android:layout_marginHorizontal="40sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:backgroundTint="#A42015"
+        android:layout_marginTop="10sp"
+
+        />
+
+    <TextView
+        android:id="@+id/SubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:background="@drawable/design"
+        android:layout_margin="50sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:backgroundTint="#0D4D54"
+
+        />
+
+
+
+
+
+</LinearLayout>

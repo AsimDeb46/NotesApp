@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignInFragment"
+    android:orientation="vertical"
+    android:background="#E2CDDC39"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="SignIn Now"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        android:textSize="35dp"
+        android:textColor="#1672B8"
+        android:gravity="center"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/UserContinar"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="20dp"
+                app:helperText="required"
+                app:helperTextTextColor="#DB3131"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/UserTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your name"
+                    android:inputType="text"
+                    android:lines="1"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailContinar"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="20dp"
+                app:helperText="required"
+                app:helperTextTextColor="#DB3131"
+                app:startIconDrawable="@drawable/baseline_email_24"
+                app:layout_constraintTop_toBottomOf="@id/UserContinar"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordContinar"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="20dp"
+                app:helperText="required"
+                app:helperTextTextColor="#DB3131"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                app:layout_constraintTop_toBottomOf="@id/emailContinar"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLength="16"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignIn"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/loginbtn_design"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#F0000000"
+
+        />
+
+    <TextView
+        android:id="@+id/haveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I have alredy an account"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#48C84B"
+        android:gravity="center"
+
+        />
+
+
+
+</LinearLayout>
